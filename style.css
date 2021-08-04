@@ -83,6 +83,7 @@ div.sheet {
   display: flex;
   align-items: center;
   justify-content: center;
+  flex-direction: column;
 }
 
 .type-information {
@@ -93,6 +94,7 @@ div.sheet {
   display: flex;
   align-items: center;
   justify-content: space-around;
+  /* flex-direction: column; */
 }
 
 .win,
