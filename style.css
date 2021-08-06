@@ -4,11 +4,23 @@
   box-sizing: border-box;
 }
 
+body {
+  overflow-x: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+header {
+  height: 8vh;
+}
+
 .header {
+  height: 8vh;
   background-color: #8a2be2;
   padding: 10px 16px;
-  color: #f1f1f1;
-  z-index: 4;
+  color: #e9dede;
+  /* z-index: 4; */
 }
 
 .sticky {
@@ -21,15 +33,12 @@
   padding-top: 102px;
 }
 
-body {
-  overflow-x: hidden;
-}
-
 ::-webkit-scrollbar {
   width: 0px;
 }
 
 .main-container {
+  /* margin-top: 8vh; */
 }
 
 .accordion {
