@@ -13,6 +13,7 @@ body {
 
 header {
   height: 8vh;
+  z-index: 4;
 }
 
 .header {
@@ -20,7 +21,6 @@ header {
   background-color: #8a2be2;
   padding: 10px 16px;
   color: #e9dede;
-  /* z-index: 4; */
 }
 
 .sticky {
@@ -35,10 +35,6 @@ header {
 
 ::-webkit-scrollbar {
   width: 0px;
-}
-
-.main-container {
-  /* margin-top: 8vh; */
 }
 
 .accordion {
@@ -87,16 +83,8 @@ header {
   transition: max-height 0.2s ease-out;
 }
 
-div.sheet {
-  background-color: #fafafa;
-  padding: 1rem;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-}
-
-.type-information {
+.type-information,
+.immunity {
   background-color: #ffffff;
   width: 95vw;
   padding: 0.5rem 1rem;
@@ -104,7 +92,6 @@ div.sheet {
   display: flex;
   align-items: center;
   justify-content: space-around;
-  /* flex-direction: column; */
 }
 
 .win,
@@ -115,15 +102,25 @@ div.sheet {
 .indication {
   color: #000000;
   background-color: #ffffff;
-  margin-bottom: 0.4rem;
+  margin-bottom: 0.3vh;
+  padding: 0.5rem;
 }
 
-div#win {
-  background-color: #00ff00;
+hr {
+  border: solid;
+  border-radius: 5px;
 }
 
-div#lose {
-  background-color: #ff0000;
+hr#win {
+  border-color: #00ff00;
+}
+
+hr#lose {
+  border-color: #ff0000;
+}
+
+hr#immune {
+  border-color: #b6a6a6;
 }
 
 .type-efectiveness {
