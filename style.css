@@ -9,6 +9,7 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  font-family: "Noto Sans JP", sans-serif;
 }
 
 header {
@@ -35,6 +36,10 @@ header {
 
 ::-webkit-scrollbar {
   width: 0px;
+}
+
+.type-title {
+  font-weight: 500;
 }
 
 .accordion {
@@ -104,6 +109,7 @@ header {
   background-color: #ffffff;
   margin-bottom: 0.3vh;
   padding: 0.5rem;
+  font-weight: 300;
 }
 
 hr {
@@ -135,21 +141,26 @@ hr#immune {
   flex-wrap: wrap;
 }
 
-@media (max-width: 360px) {
-  .type-efectiveness {
+@media (max-width: 500px) {
+  .type-efectiveness,
+  .immunity {
     display: flex;
     flex-direction: column;
     height: 9rem;
+  }
+
+  .immunity {
+    margin-bottom: 1rem;
   }
 }
 
 .type-tag {
   background-color: #000000;
   padding: 1rem;
-  width: 4rem;
+  width: 6rem;
   height: 1rem;
   border-radius: 1rem;
-  margin: 1vw;
+  margin: 0.5vw;
   display: flex;
   align-items: center;
   justify-content: center;
