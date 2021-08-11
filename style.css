@@ -129,7 +129,7 @@ hr#immune {
   border-color: #b6a6a6;
 }
 
-.type-efectiveness {
+.type-effectiveness {
   background-color: #ffffff;
   width: 38vw;
   height: 6rem;
@@ -142,15 +142,16 @@ hr#immune {
 }
 
 @media (max-width: 500px) {
-  .type-efectiveness,
+  .type-effectiveness,
   .immunity {
     display: flex;
     flex-direction: column;
-    height: 9rem;
+    height: 10rem;
   }
 
   .immunity {
     margin-bottom: 1rem;
+    margin-top: 2rem;
   }
 }
 
