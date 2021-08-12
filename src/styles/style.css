@@ -162,6 +162,7 @@ hr#immune {
 
   .header {
     height: 8vh;
+    justify-content: center;
   }
 
   .main-logo {
